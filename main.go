@@ -31,6 +31,7 @@ func main() {
 	reader := csv.NewReader(bufio.NewReader(file))
 	records, err := reader.ReadAll()
 	Err("Failed to parse csv", err)
+	records = records[1:] // skip header row
 	if code == "all" {
 		for _, record := range records {
 			fmt.Printf("%s %s\n%s\n", record[0], record[1], record[2])
