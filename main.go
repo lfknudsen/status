@@ -34,7 +34,7 @@ func main() {
 	records = records[1:] // skip header row
 	if code == "all" {
 		for _, record := range records {
-			fmt.Printf("%s %s\n%s\n", record[0], record[1], record[2])
+			fmt.Printf("%s %s\n%s\n\n", record[0], record[1], record[2])
 		}
 	} else {
 		for _, record := range records {
