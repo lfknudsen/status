@@ -17,7 +17,7 @@ func Err(context string, err error) {
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: status <code> or status <title> or status <all>")
+		fmt.Println("Usage: status <code> or status <title> or status all")
 		os.Exit(0)
 	}
 	e, err := os.Executable()
