@@ -2,6 +2,10 @@
 
 CLI utility for quickly displaying HTTP status code information.
 
+## Dependencies
+The Makefile install script uses my [install](https://gitlab.com/lfknudsen/install) programme,
+but compiling it manually does not actually require this.
+
 ## Setup
 
 ```
